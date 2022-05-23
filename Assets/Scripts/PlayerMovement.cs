@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public Vector3 playerPosition;
-    public float rotationSpeed;
     public float movementSpeed;
  
 
@@ -37,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
             transform.position += new Vector3(0, 0, -movementSpeed);
         }
 
-        transform.eulerAngles += new Vector3(0, rotationSpeed, 0);
-        //transform.localScale += new Vector3(0.1f, 0, 0);
+        //transform.eulerAngles += new Vector3(0, 0.1f, 0); //Gira 0.1 (F para pasar a float) en eje Y
+        //transform.localScale += new Vector3(0.1f, 0, 0); //Se agranda 0.1 (F para pasar a float) en eje X
     }
 }
